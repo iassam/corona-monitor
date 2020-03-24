@@ -1,0 +1,19 @@
+{
+  "name": "iss-corona-monitor",
+  "version": "1.0.0",
+  "description": "Aplication for monitoring of corona virus",
+  "main": "index.html",
+  "scripts": {
+    "dev": "babel ./main.js -o bundle.js"
+  },
+  "author": "iassam",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "vue": "^2.6.11"
+  }
+}
