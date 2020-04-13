@@ -11,11 +11,11 @@ const app = new Vue({
             let self = this;
 
             axios.get('https://corona.lmao.ninja/all')
-                .then(function (response) {
+                .then(function(response) {
 
                     self.world = response.data;
                 })
-                .catch(function (error) {
+                .catch(function(error) {
 
                     console.log(error);
                 });
@@ -26,11 +26,11 @@ const app = new Vue({
             let self = this;
 
             axios.get('https://corona.lmao.ninja/countries')
-                .then(function (response) {
+                .then(function(response) {
 
                     self.countries = response.data;
                 })
-                .catch(function (error) {
+                .catch(function(error) {
 
                     console.log(error);
                 });
@@ -46,6 +46,6 @@ const app = new Vue({
             this.getCountriesInfo();
             this.getWorldInfo();
 
-        }, 60000);
+        }, 1800000);
     },
 });
